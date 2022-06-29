@@ -1,5 +1,0 @@
-
-drawText('Test Bubbles');
-
-
-bounceBubbles();
