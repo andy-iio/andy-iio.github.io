@@ -1,0 +1,184 @@
+/* || GENERAL */
+
+/* all */
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+/* links */
+a {
+  color: #466995;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* lists */
+ul {
+  background-color: rgba(242, 170, 230, 0.8);
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* || NAVIGATION BAR */
+nav {
+  border-bottom: 1px solid #dddddd;
+  box-sizing: border-box;
+  left: 0px;
+  overflow-y: auto;
+  padding: 0px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+
+}
+
+.nav-link {
+  border: 2px solid rgb(236, 115, 135);
+  border-radius: 10px;
+  color: black;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+  width: 13%;
+}
+
+.nav-link:hover {
+  background-color: rgb(243, 81, 216);
+  color: aquamarine;
+}
+
+/* || HOME PAGE */
+.bg-container {
+  background-image: url("img/pink-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+.home {
+  color: black;
+  padding: 100px;
+  text-align: center;
+  height: 100vh;
+}
+
+.home h1 {
+  font-family: 'Stick No Bills', 'Rubik Moonrocks', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 12vw;
+  font-weight: bold;
+}
+
+.home h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4vw;
+  padding: 30px 0;
+}
+
+/* || HOME PAGE BUTTONS */
+.button {
+  align-items: center;
+  border: 3px solid rgb(32, 3, 44);
+  border-radius: 5px;
+  box-shadow: 0 2px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.button:hover {
+  background-color: #8fd9f6;
+  color: #ffffff;
+  font-size: 18px;
+  transition: font-size .1s ease-in-out;
+}
+
+.button:active {
+  font-size: 18px;
+  transition: font-size .1s ease-in-out;
+}
+
+#button1 {
+  background-color: blueviolet;
+  color:aqua;
+}
+
+#button2 {
+  background-color: rgb(54, 173, 173);
+  margin-top: 10px;
+  color:aqua;
+
+}
+
+
+/* || PROJECTS PAGE */
+.projects-panel {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 30px 0px;
+  text-align: center;
+  height: 100vh;
+}
+
+.projects-panel h2 {
+  width: 100%;
+}
+
+/* project buttons */
+.project {
+  align-items: center;
+  background-color: #2d7bf9;
+  border: 3px solid #053f9c;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 30px;
+  height: 200px;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 240px;
+}
+
+.project:hover {
+  background-color: #975198;
+  color: antiquewhite;
+  font-size: 35px;
+  font-weight: bold;
+  transition: font-size .1s ease-in-out;
+}
+
+.project:active {
+  background-color: #5c095e;
+  color: rgb(251, 209, 153);
+  transition: color .1s ease-in, background-color .1s ease-in
+}
