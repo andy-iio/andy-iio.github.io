@@ -13,6 +13,8 @@ import sudoku from './media/sudoku.png';
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
+  
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const openVideo = (embedId) => {
