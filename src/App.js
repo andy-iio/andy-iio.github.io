@@ -11,20 +11,10 @@ import pizzaMenu from './media/pizza-menu.png';
 import hairSalon from './media/hair-salon.png';
 import sudoku from './media/sudoku.png';
 
-// VIDEOS
-import edgeDetectionVideo from './media/demos/ImageEdgeDetection.mp4'
-
-
 function App() {
   const [submitted, setSubmitted] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Process the form submission here
-    setSubmitted(true);
-  };
-
+  
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const openVideo = (embedId) => {
@@ -203,7 +193,7 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={sudoku} className="card-img-top p-3" alt="Edge Dectection Website" />
+                  <img src={sudoku} className="card-img-top p-3" alt="Sudoku Solver" />
                   <div className="card-body" style={{ height: '150px' }}>
                     <h5 className="card-title">Sudoku Solver</h5>
                     <p className="card-text">Using Javascript, this app solves Sudoku puzzles using a backtracking algorithm. It fills in empty cells by recursively trying valid choices until a solution is found.</p>
@@ -220,7 +210,7 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={pizzaMenu} className="card-img-top p-3" alt="Edge Dectection Website" />
+                  <img src={pizzaMenu} className="card-img-top p-3" alt="Pizzeria Website" />
                   <div className="card-body" style={{ height: '150px' }}>
                     <h5 className="card-title">Pizzeria Menu</h5>
                     <p className="card-text">Built using React and Bootstrap, this website features an ad carousel that loops throught the different deals, as well as the restaurants full menu. </p>
@@ -240,7 +230,7 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={hairSalon} className="card-img-top p-3" alt="Edge Dectection Website" />
+                  <img src={hairSalon} className="card-img-top p-3" alt="Hair Salon Website" />
                   <div className="card-body" style={{ height: '150px' }}>
                     <h5 className="card-title">Hair Salon Webpage</h5>
                     <p className="card-text">Using HTML, CSS, and Bootstrap, this webpage serves as a platform for customers to explore the salon's services, learn about the team, and book appointments.</p>
@@ -257,13 +247,13 @@ function App() {
 
               {/* <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Book Tracker</h5>
                     <p className="card-text">Python based website created using Flask framework, allows a user to search for a book, add it to their virtual bookshelf, and see book reveiws.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -274,13 +264,13 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Fit Battle</h5>
-                    <p className="card-text">project 2 description</p>
+                    <p className="card-text">info here</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'>See Demo</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -291,13 +281,13 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Blue Lion Webpage</h5>
                     <p className="card-text">info here</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'>See Demo</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -310,13 +300,13 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Prettier Google</h5>
                     <p className="card-text">info here</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -327,13 +317,13 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Adhoc</h5>
                     <p className="card-text">info here</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'>See Demo</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -345,13 +335,13 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card">
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Island World</h5>
                     <p className="card-text">In progress, coming soon! a 3D website using Vite</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick({ edgeDetectionVideo })}>See Demo</a>
+                      <a className='btn btn-dark'>See Demo</a>
                     </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark'>See Code</a>
@@ -396,7 +386,7 @@ function App() {
         </section>
 
         <footer className="py-3 text-center">
-          <p>Website created by Andy -- Check out my other work <a href='https://andy-iio.github.io/'>here</a></p>
+          <p>Website created by Andy -- Check out my <a href='https://github.com/andy-iio'>github</a></p>
         </footer>
       </div>
     </body>
