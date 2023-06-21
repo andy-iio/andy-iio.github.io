@@ -7,13 +7,12 @@ import me from './media/me.png';
 import edgeDetection from './media/edgeDetection.png';
 import waffleBar from './media/waffleBar.png';
 import recipeBot from './media/recipeBot.png';
-import pizzaMenu from './media/pizza-menu.png';
+import pizzaMenu from './media/pizza.png';
 import hairSalon from './media/hair-salon.png';
 import sudoku from './media/sudoku.png';
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
-  const [videoUrl, setVideoUrl] = useState('');
   
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -55,7 +54,7 @@ function App() {
     setSubmitted(true);
   };
   return (
-    <body style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+    <body style={{ backgroundColor: 'rgb(252, 238, 233)' }}>
       <div className="container-fluid page">
         <div className='nav-container'>
           <nav className="navbar navbar-expand-lg navbar-light fixed-top container">
@@ -78,7 +77,7 @@ function App() {
             >
               <ul className="navbar-nav text-center">
                 <li className="nav-item mx-2">
-                  <a className="nav-link" href="#" onClick={handleLinkClick}>
+                  <a className="nav-link" href="#about" onClick={handleLinkClick}>
                     About
                   </a>
                 </li>

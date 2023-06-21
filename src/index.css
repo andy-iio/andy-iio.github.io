@@ -143,6 +143,13 @@ code {
   border-radius: 30%;
 }
 
+/* Larger Screens */
+@media (min-width: 2180px) {
+  .page {
+    border: 2px solid rgb(146, 181, 154);
+  }
+}
+
 /* Tablets, small windows */
 @media (max-width: 1225px) {
   .main {
