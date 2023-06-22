@@ -10,7 +10,8 @@ import recipeBot from './media/recipeBot.png';
 import pizzaMenu from './media/pizza.png';
 import hairSalon from './media/hair-salon.png';
 import sudoku from './media/sudoku.png';
-
+import skiResort from './media/ski-resort.png';
+import flavourfulPlate from './media/flavourful-plate.png';
 function App() {
   const [submitted, setSubmitted] = useState(false);
   
@@ -163,7 +164,7 @@ function App() {
                   <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
                   <div className="card-body" style={{ height: '150px' }}>
                     <h5 className="card-title">Waffle Bar Website</h5>
-                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any screen size, with a toggle button to open the navigation menu on smaller screens.</p>
+                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
@@ -175,6 +176,24 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={flavourfulPlate} className="card-img-top p-3" alt="The flavouful plate website" />
+                  <div className="card-body">
+                    <h5 className="card-title">The Flavourful Plate</h5>
+                    <p className="card-text">A recipe blog website created using HTML, Bootstrap and custom CSS, with multiple pages and recipes. </p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('O19ldvaXgag')}>
+                        See Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
@@ -193,7 +212,7 @@ function App() {
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={sudoku} className="card-img-top p-3" alt="Sudoku Solver" />
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Sudoku Solver</h5>
                     <p className="card-text">Using Javascript, this app solves Sudoku puzzles using a backtracking algorithm. It fills in empty cells by recursively trying valid choices until a solution is found.</p>
                   </div>
@@ -210,14 +229,11 @@ function App() {
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={pizzaMenu} className="card-img-top p-3" alt="Pizzeria Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Pizzeria Menu</h5>
                     <p className="card-text">Built using React and Bootstrap, this website features an ad carousel that loops throught the different deals, as well as the restaurants full menu. </p>
                   </div>
                   <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>Visit Site</a>
-                    </div>
                     <div className='col-auto'>
                       <a className='btn btn-dark' onClick={() => handleButtonClick('D5NMRLUHtsA')}>
                         See Demo
@@ -230,9 +246,9 @@ function App() {
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={hairSalon} className="card-img-top p-3" alt="Hair Salon Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
+                  <div className="card-body">
                     <h5 className="card-title">Hair Salon Webpage</h5>
-                    <p className="card-text">Using HTML, CSS, and Bootstrap, this webpage serves as a platform for customers to explore the salon's services, learn about the team, and book appointments.</p>
+                    <p className="card-text">Using HTML, CSS, and Bootstrap, this webpage serves as a platform for customers to explore the salon's services and book appointments.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
@@ -244,110 +260,23 @@ function App() {
                 </div>
               </div>
 
-              {/* <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={skiResort} className="card-img-top p-3" alt="Ski Resort Website" />
                   <div className="card-body">
-                    <h5 className="card-title">Book Tracker</h5>
-                    <p className="card-text">Python based website created using Flask framework, allows a user to search for a book, add it to their virtual bookshelf, and see book reveiws.</p>
+                    <h5 className="card-title">The Summit Ski Resort</h5>
+                    <p className="card-text">Simple HTML and CSS practice project for a ski resort webpage, featuring a full page cover photo and more info on scroll.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark'</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('F0MaKLprbw0')}>
+                        See Demo
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Fit Battle</h5>
-                    <p className="card-text">info here</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Demo</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Blue Lion Webpage</h5>
-                    <p className="card-text">info here</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Demo</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Prettier Google</h5>
-                    <p className="card-text">info here</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Adhoc</h5>
-                    <p className="card-text">info here</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Demo</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Island World</h5>
-                    <p className="card-text">In progress, coming soon! a 3D website using Vite</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Demo</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>See Code</a>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
 
