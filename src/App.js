@@ -12,6 +12,8 @@ import hairSalon from './media/hair-salon.png';
 import sudoku from './media/sudoku.png';
 import skiResort from './media/ski-resort.png';
 import flavourfulPlate from './media/flavourful-plate.png';
+import riseGrind from './media/riseAndGrind.png';
+
 function App() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -141,7 +143,43 @@ function App() {
           <div className="container">
             <h2 className="mb-4 text-center">My Projects</h2>
             <div className="row">
+              
               <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">The Waffle Bar</h5>
+                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
+                    </div>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={riseGrind} className="card-img-top p-3" alt="Rise and Grind Coffee Website" />
+                  <div className="card-body">
+                    <h5 className="card-title">Rise & Grind Coffee</h5>
+                    <p className="card-text">Using Javascript, this website features a changing typed message on the homepage.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('v9EQoMp8OZw')}>
+                        See Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
                   <div className="card-body" style={{ height: '150px' }}>
@@ -155,24 +193,6 @@ function App() {
                       <a className='btn btn-dark' onClick={() => handleButtonClick('EZ1evF_kN9s')}>
                         See Demo
                       </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card h-100 d-flex flex-column">
-                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">Waffle Bar Website</h5>
-                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
                     </div>
                   </div>
                 </div>
