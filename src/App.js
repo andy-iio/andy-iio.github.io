@@ -14,7 +14,7 @@ import skiResort from './media/ski-resort.png';
 import flavourfulPlate from './media/flavourful-plate.png';
 function App() {
   const [submitted, setSubmitted] = useState(false);
-  
+
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const openVideo = (embedId) => {
@@ -109,7 +109,8 @@ function App() {
             </div>
           </div>
         </header>
-        <section id="about" className="py-5 my-5">
+
+        <section id="about" className="pt-5 my-4">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 about-overlay">
@@ -186,7 +187,7 @@ function App() {
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('O19ldvaXgag')}>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('FbHVT02EKtU')}>
                         See Demo
                       </a>
                     </div>
@@ -196,14 +197,16 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
+                  <img src={skiResort} className="card-img-top p-3" alt="Ski Resort Website" />
                   <div className="card-body">
-                    <h5 className="card-title">Recipe Bot</h5>
-                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
+                    <h5 className="card-title">The Summit Ski Resort</h5>
+                    <p className="card-text">Simple HTML and CSS practice project for a ski resort webpage, featuring a full page cover photo and more info on scroll.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark'>Demo Coming Soon!</a>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('F0MaKLprbw0')}>
+                        See Demo
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -260,23 +263,22 @@ function App() {
                 </div>
               </div>
 
+
+
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={skiResort} className="card-img-top p-3" alt="Ski Resort Website" />
+                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
                   <div className="card-body">
-                    <h5 className="card-title">The Summit Ski Resort</h5>
-                    <p className="card-text">Simple HTML and CSS practice project for a ski resort webpage, featuring a full page cover photo and more info on scroll.</p>
+                    <h5 className="card-title">Recipe Bot</h5>
+                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('F0MaKLprbw0')}>
-                        See Demo
-                      </a>
+                      <a className='btn btn-dark'>Demo Coming Soon!</a>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
