@@ -143,7 +143,22 @@ function App() {
           <div className="container">
             <h2 className="mb-4 text-center">My Projects</h2>
             <div className="row">
-              
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
+                  <div className="card-body">
+                    <h5 className="card-title">Recipe Bot</h5>
+                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('x6vwteoy-hg')}>See Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
@@ -179,7 +194,7 @@ function App() {
                 </div>
               </div>
 
-<div className="col-lg-4 col-md-6 mb-4">
+              <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
                   <div className="card-body" style={{ height: '150px' }}>
@@ -278,23 +293,6 @@ function App() {
                       <a className='btn btn-dark' onClick={() => handleButtonClick('f_sl9wOEyBg')}>
                         See Demo
                       </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card h-100 d-flex flex-column">
-                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
-                  <div className="card-body">
-                    <h5 className="card-title">Recipe Bot</h5>
-                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark'>Demo Coming Soon!</a>
                     </div>
                   </div>
                 </div>
