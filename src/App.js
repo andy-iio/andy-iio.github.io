@@ -13,6 +13,7 @@ import sudoku from './media/sudoku.png';
 import skiResort from './media/ski-resort.png';
 import flavourfulPlate from './media/flavourful-plate.png';
 import riseGrind from './media/riseAndGrind.png';
+import smartCube from './media/smartcube.png';
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
@@ -161,17 +162,17 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
+                  <img src={smartCube} className="card-img-top p-3" alt="Smart Cube Website" />
                   <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">The Waffle Bar</h5>
-                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
+                    <h5 className="card-title">Smart Cube Solutions</h5>
+                    <p className="card-text">This site features an animated CSS loading screen, and then a bootstrap based homepage.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/Smart-cube-solutions'>Visit Site</a>
                     </div>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/Smart-cube-solutions'>See Code</a>
                     </div>
                   </div>
                 </div>
@@ -189,6 +190,24 @@ function App() {
                       <a className='btn btn-dark' onClick={() => handleButtonClick('v9EQoMp8OZw')}>
                         See Demo
                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">The Waffle Bar</h5>
+                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
+                    </div>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
                     </div>
                   </div>
                 </div>
