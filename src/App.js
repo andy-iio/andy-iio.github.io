@@ -145,16 +145,19 @@ function App() {
             <h2 className="mb-4 text-center">My Projects</h2>
             <div className="row">
 
-              <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
-                  <div className="card-body">
-                    <h5 className="card-title">Recipe Bot</h5>
-                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
+                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">The Waffle Bar</h5>
+                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('x6vwteoy-hg')}>See Demo</a>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
+                    </div>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
                     </div>
                   </div>
                 </div>
@@ -195,19 +198,17 @@ function App() {
                 </div>
               </div>
 
+
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={waffleBar} className="card-img-top p-3" alt="Waffle Bar Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">The Waffle Bar</h5>
-                    <p className="card-text">Website built using React and Bootstrap, designed to look great on any sized screen.</p>
+                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
+                  <div className="card-body">
+                    <h5 className="card-title">Recipe Bot</h5>
+                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://andy-iio.github.io/the-waffle-bar/'>Visit Site</a>
-                    </div>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://github.com/andy-iio/the-waffle-bar'>See Code</a>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('x6vwteoy-hg')}>See Demo</a>
                     </div>
                   </div>
                 </div>
@@ -215,16 +216,14 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">Image Edge Detection</h5>
-                    <p className="card-text">
-                      Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline.
-                    </p>
+                  <img src={skiResort} className="card-img-top p-3" alt="Ski Resort Website" />
+                  <div className="card-body">
+                    <h5 className="card-title">The Summit Ski Resort</h5>
+                    <p className="card-text">Simple HTML and CSS practice project for a ski resort webpage, featuring a full page cover photo and more info on scroll.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('EZ1evF_kN9s')}>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('F0MaKLprbw0')}>
                         See Demo
                       </a>
                     </div>
@@ -249,22 +248,27 @@ function App() {
                 </div>
               </div>
 
+
+              
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={skiResort} className="card-img-top p-3" alt="Ski Resort Website" />
-                  <div className="card-body">
-                    <h5 className="card-title">The Summit Ski Resort</h5>
-                    <p className="card-text">Simple HTML and CSS practice project for a ski resort webpage, featuring a full page cover photo and more info on scroll.</p>
+                  <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">Image Edge Detection</h5>
+                    <p className="card-text">
+                      Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline.
+                    </p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('F0MaKLprbw0')}>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('EZ1evF_kN9s')}>
                         See Demo
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
+
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
@@ -293,23 +297,6 @@ function App() {
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
                       <a className='btn btn-dark' onClick={() => handleButtonClick('D5NMRLUHtsA')}>
-                        See Demo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card h-100 d-flex flex-column">
-                  <img src={hairSalon} className="card-img-top p-3" alt="Hair Salon Website" />
-                  <div className="card-body">
-                    <h5 className="card-title">Hair Salon Webpage</h5>
-                    <p className="card-text">Using HTML, CSS, and Bootstrap, this webpage serves as a platform for customers to explore the salon's services and book appointments.</p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('f_sl9wOEyBg')}>
                         See Demo
                       </a>
                     </div>
