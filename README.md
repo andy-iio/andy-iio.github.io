@@ -12,8 +12,8 @@ I have been working on my skills through self-study and personal projects. I am 
 ## Technologies Used
 
 I created this website using the following technologies:
-- react
-- bootstrap
+- React
+- Bootstrap
 - CSS
 - HTML5
 - Javascript
