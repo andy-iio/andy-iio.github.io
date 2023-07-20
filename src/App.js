@@ -13,7 +13,9 @@ import sudoku from './media/sudoku.png';
 import skiResort from './media/ski-resort.png';
 import flavourfulPlate from './media/flavourful-plate.png';
 import riseGrind from './media/riseAndGrind.png';
-import smartCube from './media/smartcube.png';
+import smartCube from './media/smartcube1.png';
+import microBreak from './media/MicroBreak.png';
+
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
@@ -91,6 +93,11 @@ function App() {
                   </a>
                 </li>
                 <li className="nav-item mx-2">
+                  <a className="nav-link" href="https://drive.google.com/file/d/17P7rw-V5hTb1fmsePySSkIYZDftxGhRQ/view?usp=sharing" onClick={handleLinkClick}>
+                    Resume
+                  </a>
+                </li>
+                <li className="nav-item mx-2">
                   <a className="nav-link" href="#contact" onClick={handleLinkClick}>
                     Contact
                   </a>
@@ -137,13 +144,25 @@ function App() {
           </div>
         </section>
 
-
-
-
         <section id="projects" className="text-center">
           <div className="container">
             <h2 className="mb-4 text-center">My Projects</h2>
             <div className="row">
+
+            <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
+                  <div className="card-body">
+                    <h5 className="card-title">Recipe Bot</h5>
+                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('x6vwteoy-hg')}>See Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
@@ -165,17 +184,36 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={smartCube} className="card-img-top p-3" alt="Smart Cube Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">Smart Cube Solutions</h5>
-                    <p className="card-text">This site features an animated CSS loading screen, and then a bootstrap based homepage.</p>
+                  <img src={microBreak} className="card-img-top p-3" alt="Micro Break Website" />
+                  <div className="card-body">
+                    <h5 className="card-title">Micro break Tasks</h5>
+                    <p className="card-text">Using Javascript and bootstrap, this app is a convenient online platform designed to optimize your short moments of respite during work.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://andy-iio.github.io/Smart-cube-solutions'>Visit Site</a>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/MicroBreak/'>Visit Site</a>
                     </div>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' href='https://github.com/andy-iio/Smart-cube-solutions'>See Code</a>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/MicroBreak'>See Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">Image Edge Detection</h5>
+                    <p className="card-text">
+                      Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline.
+                    </p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' onClick={() => handleButtonClick('EZ1evF_kN9s')}>
+                        See Demo
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -197,18 +235,20 @@ function App() {
                   </div>
                 </div>
               </div>
-
-
+              
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
-                  <img src={recipeBot} className="card-img-top p-3" alt="Recipe Bot" />
-                  <div className="card-body">
-                    <h5 className="card-title">Recipe Bot</h5>
-                    <p className="card-text">Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.</p>
+                  <img src={smartCube} className="card-img-top p-3" alt="Smart Cube Website" />
+                  <div className="card-body" style={{ height: '150px' }}>
+                    <h5 className="card-title">Smart Cube Solutions</h5>
+                    <p className="card-text">This site features an animated CSS loading screen, and then a bootstrap based homepage.</p>
                   </div>
                   <div className='row justify-content-center mb-3'>
                     <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('x6vwteoy-hg')}>See Demo</a>
+                      <a className='btn btn-dark' href='https://andy-iio.github.io/Smart-cube-solutions'>Visit Site</a>
+                    </div>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='https://github.com/andy-iio/Smart-cube-solutions'>See Code</a>
                     </div>
                   </div>
                 </div>
@@ -248,28 +288,6 @@ function App() {
                 </div>
               </div>
 
-
-              
-              <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card h-100 d-flex flex-column">
-                  <img src={edgeDetection} className="card-img-top p-3" alt="Edge Dectection Website" />
-                  <div className="card-body" style={{ height: '150px' }}>
-                    <h5 className="card-title">Image Edge Detection</h5>
-                    <p className="card-text">
-                      Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline.
-                    </p>
-                  </div>
-                  <div className='row justify-content-center mb-3'>
-                    <div className='col-auto'>
-                      <a className='btn btn-dark' onClick={() => handleButtonClick('EZ1evF_kN9s')}>
-                        See Demo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={sudoku} className="card-img-top p-3" alt="Sudoku Solver" />
@@ -287,7 +305,9 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6 mb-4">
+              
+
+              {/* <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
                   <img src={pizzaMenu} className="card-img-top p-3" alt="Pizzeria Website" />
                   <div className="card-body">
@@ -302,7 +322,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
