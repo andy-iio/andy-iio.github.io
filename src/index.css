@@ -135,6 +135,7 @@ code {
 .card{
   height: 500px !important;
 }
+
 #contact {
   max-width:600px;
   display: block;
@@ -157,8 +158,9 @@ code {
   }
 }
 
+
 /* Mobile screens */
-@media (max-width: 650px) {
+@media (max-width: 905px) {
   .main {
     /* background-image: url(./media/mobile-main.png) !important; */
     background-size: cover;

@@ -15,8 +15,8 @@ import flavourfulPlate from './media/flavourful-plate.png';
 import riseGrind from './media/riseAndGrind.png';
 import smartCube from './media/smartcube1.png';
 import microBreak from './media/MicroBreak.png';
-
-
+import DigitalRealm from './media/digitalRealm.png';
+import Loft from './media/loft.png';
 function App() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -43,7 +43,7 @@ function App() {
 
   const handleLinkClick = () => {
     setIsNavbarOpen(false);
-  };
+  }; 
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -184,6 +184,21 @@ function App() {
 
               <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
+                  <img src={DigitalRealm} className="card-img-top p-3" alt="Digital Realm Website" />
+                  <div className="card-body">
+                    <h5 className="card-title">Digital Realm</h5>
+                    <p className="card-text">My web development website, showing potential clients what they can expect and giving them information on my services.</p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                    <div className='col-auto'>
+                      <a className='btn btn-dark' href='digitalrealm.ca'>Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
                   <img src={microBreak} className="card-img-top p-3" alt="Micro Break Website" />
                   <div className="card-body">
                     <h5 className="card-title">Micro break Tasks</h5>
@@ -305,7 +320,22 @@ function App() {
                 </div>
               </div>
 
-              
+              <div className="col-lg-4 col-md-6 mb-4">
+                <div className="card h-100 d-flex flex-column">
+                  <img src={Loft} className="card-img-top p-3" alt="The Loft reservation site" />
+                  <div className="card-body">
+                    <h5 className="card-title">The Loft Reservations</h5>
+                    <p className="card-text">Using Bootstrap and JavaScript, this reservation site allows people to book a room, and see what other reservations are upcoming for that room. </p>
+                  </div>
+                  <div className='row justify-content-center mb-3'>
+                  <div className='col-auto'>
+                      <a className='btn btn-secondary'>
+                        Demo Coming Soon
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               {/* <div className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100 d-flex flex-column">
