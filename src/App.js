@@ -126,11 +126,11 @@ function App() {
               <div className="col-lg-6 about-overlay">
                 <h2 className="section-title">About Me</h2>
                 <p className="section-description">
-                  Hello there! I'm Andy, a passionate front-end web developer with a strong desire to create visually appealing and user-friendly websites. As a beginner in the field, I bring a fresh perspective and a curiosity to learn and grow.
+                  Hello there! I'm Andy, a computer science student who loves creating project and learning new programming tools and languages. 
                 </p>
                 <p className="section-description">
-                  I have been working on my skills through self-study and personal projects. I am committed to mastering the latest web development technologies and staying updated with industry trends.
-                  With a solid foundation in HTML, CSS, and JavaScript, as well as Bootstrap, Flask and React, I am eager to contribute to exciting projects!
+                  In addition to school, I have been working on my skills through self-study and personal projects. 
+                  With a solid foundation in web development technogies like Bootstrap, Flask, React, as well as HTML, CSS, and JavaScript, I am eager to contribute to exciting projects!
                 </p>
                 <p className="section-description">
                   Thank you for taking the time to visit my portfolio website. I invite you to explore my projects and get in touch if you're interested in collaborating or discussing potential opportunities. Let's build something great together!
