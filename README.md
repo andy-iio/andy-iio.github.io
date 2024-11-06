@@ -4,7 +4,7 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 
 ## About Me
 
-I have been working on my skills through self-study and personal projects. I am committed to mastering the latest web development technologies and staying updated with industry trends. With a solid foundation in HTML, CSS, and JavaScript, as well as Bootstrap, Flask and React, I am eager to contribute to exciting projects!
+I have been working on my skills through self-study and personal projects. I have a solid foundation in HTML, CSS, and JavaScript, as well as Bootstrap, Flask and React!
 
 
 ## Technologies Used
