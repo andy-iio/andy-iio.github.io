@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
+:root {
+  --colour-1: #B3D2B2;
+  --colour-2: #BDE4A7;
+  --colour-3: #FFFD98;
+  --colour-3-seethrough:#fffd98cf;
+  --colour-4: #9FBBCC;
+  --colour-5: #7A9CC6;
+  --max-width: 1400px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,27 +20,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  z-index: -10;
+  z-index: 1;
+  position: relative;
+  background-color: var(--colour-5);
 }
 
 .page {
-  background-color: rgb(252, 238, 233);
-  max-width: 2200px;
-  background-image: url('./lines.svg') !important;
+  background-color: var(--colour-4);
+  max-width: var(--max-width)
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.header-container {
+  position: relative;
+  z-index: 1;
 }
 
 .navbar {
-  background-color: rgb(146, 181, 154);
+  background-color: var(--colour-1);
   font-family: 'Reem Kufi Fun', sans-serif;
 }
 
 .nav-container .container {
-  max-width: 2200px !important;
+  max-width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.tag {
+  color: #000000;
+  background-color: var(--colour-3);
+  border:2px solid #000000;
 }
 
 .btn-hover {
@@ -40,7 +71,7 @@ code {
 .btn-hover:hover {
   color: rgb(255, 255, 255) !important;
   ;
-  background-color: rgba(146, 110, 146, 0.863) !important;
+  background-color: var(--colour-5) !important;
   border-color: #ffffffad !important;
   border-width: 2px !important;
   font-family: 'Reem Kufi Fun', sans-serif;
@@ -49,11 +80,14 @@ code {
 .main {
   margin-top: 55px;
   height: 500px;
-  background-image: url('./media/background.png') !important;
-  background-repeat: repeat-x;
+  /* background-image: url('./media/background.png') !important;
+  background-repeat: repeat-x; */
+  /* background-size: contain;
+  background-image: url('./lines.svg') !important; */
+  /* background-repeat: repeat-y; */
   background-size: contain;
   position: relative;
-  border-bottom: 3px solid rgb(146, 181, 154);
+  border-bottom: 3px solid var(--colour-1);
 }
 
 .main span {
@@ -63,8 +97,32 @@ code {
 }
 
 .main .lead {
-  font-family: 'Satisfy', cursive;
   font-size: 22px;
+}
+
+/* header andy text */
+.andyText {
+  letter-spacing: 15px;
+  stroke: var(--colour-3);
+  font-size: 5rem;
+  font-weight: 700;
+  stroke-width: 2;
+  animation: textAnimate 9s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: var(--colour-1)
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: var(--colour-1)
+  }
+
 }
 
 #projects {
@@ -73,32 +131,37 @@ code {
 
 .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  border-radius: 35px;
-  background-color: rgb(163, 184, 153);
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%);   */
+  width: 400px !important; 
+  height: 350px !important;
+  margin: 80px;
+  border-radius: 30px;
+  background-color: var(--colour-5);
   z-index: 1;
-  /* Adjust the z-index value */
+  border:4px solid var(--colour-3);
 }
 
-.about-overlay{
-  background-color: rgba(252, 238, 233, 0.8);
-  border-radius: 30%;
+.about-overlay {
+  background-color: var(--colour-5);
+  border-radius: 5%;
+  color: white;
+  max-width: 700px;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 50px;
 }
+
 .main h1,
 .main p,
 .main a {
-  color: white;
+  color: black;
   text-align: center;
   position: relative;
   z-index: 2;
-  /* Adjust the z-index value */
 }
-
-
 
 .center-text-vertical {
   display: flex;
@@ -107,47 +170,118 @@ code {
 }
 
 .image {
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 375px;
+  max-width: 400px;
   z-index: 2;
 }
-#about{
-    background-repeat: repeat;
-    background-size: auto;
+
+/* scrolling tags on header */
+.bgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bgTagList {
+  width: var(--max-width);
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 2rem 0;
+  position: relative;
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.bgLoopSlider {
+  .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: var(--direction);
+    animation-duration: var(--duration);
+  }
+}
+
+.bgTag {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: var(--colour-3);
+  font-size: 0.9rem;
+  background-color: var(--colour-1);
+  border-radius: 0.4rem;
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+
+  span {
+    font-size: 1.2rem;
+    color: var(--colour-5);
+  }
+}
+
+.bgFade {
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--colour-5), transparent 30%, transparent 70%, var(--colour-5));
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+#about {
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 
 #projects h5 {
-  font-size:25px;
+  font-size: 25px;
   font-family: 'Dosis', sans-serif;
   text-decoration: dashed;
 }
 
-#projects img{
-  height:280px
+#projects img {
+  height: 280px
 }
+
 #projects h2,
 #about h2,
-#contact h2{
-  font-size:50px;
+#contact h2 {
+  font-size: 50px;
   font-family: 'Dosis', sans-serif;
 }
-.card{
-  height: 500px !important;
+
+.card {
+  height: 500px;
 }
 
 #contact {
-  max-width:600px;
+  max-width: 600px;
   display: block;
-  margin:auto;
-  background-color: rgba(252, 238, 233, 0.8);
-  border-radius: 30%;
+  margin: auto;
+  background-color: var(--colour-3);
+  border-radius: 5%;
+  z-index: 4 !important;
 }
+
 
 /* Larger Screens */
 @media (min-width: 2180px) {
-  .page {
-    border: 2px solid rgb(146, 181, 154);
+  .card {
+    height: 550px;
   }
 }
 
@@ -209,11 +343,12 @@ code {
   border-radius: 0%;
 
   z-index: 99;
-} 
+}
 
 .video-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%; /*16:9 aspect ratio*/
+  padding-bottom: 56.25%;
+  /*16:9 aspect ratio*/
   position: relative;
 }
 
@@ -224,4 +359,5 @@ code {
   width: 100%;
   height: 100%;
 }
+
 /* END OF VIDEO PLAYER */
