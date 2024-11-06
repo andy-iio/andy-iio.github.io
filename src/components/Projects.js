@@ -24,15 +24,15 @@ const projectData = [
   {
     id: 1,
     title: "Recipe Bot",
-    description: "Using a postgresSQL database, python, and Flask, this website asks a series of questions, and then returns some recipe options based on the answers.",
+    description: "Using Python, Flask, and a postgresSQL database populated with recipes by a webscraper, this website asks a series of questions and then returns matching recipe options based on the answers.",
     image: recipeBot,
     demoUrl: "x6vwteoy-hg",
-    tags: ["Python", "Flask", "PostgreSQL"]
+    tags: ["Python", "Flask", "PostgreSQL", "Webscraper"]
   },
   {
     id: 2,
     title: "Image Edge Detection",
-    description: "Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline.",
+    description: "Using cv2, numpy, and matplotlib, this program takes an image and detects the edges, returning a greyscale version and an outline. There is an option to adjust the detection threshold, and to change the threshold afterwards to regenerate new images.",
     image: edgeDetection,
     demoUrl: "EZ1evF_kN9s",
     tags: ["Python", "OpenCV", "NumPy", "Matplotlib"]
@@ -47,12 +47,11 @@ const projectData = [
   },
   {
     id: 4,
-    title: "Waffle Bar",
-    description: "Website built using React and Bootstrap, designed to look great on any sized screen.",
-    image: waffleBar,
-    codeUrl: "https://github.com/andy-iio/the-waffle-bar",
-    siteUrl: "https://andy-iio.github.io/the-waffle-bar/",
-    tags: ["React", "Bootstrap"]
+    title: "Egar Tool & Die",
+    description: "Website designed for a local Tool & Die shop",
+    siteUrl:"https://www.egartool.com/",
+    image: egar,
+    tags: ["Web Design", "Wordpress", "PHP"]
   },
   {
     id: 5,
@@ -71,12 +70,14 @@ const projectData = [
   },
   {
     id: 7,
-    title: "Egar Tool & Die",
-    description: "Website for a local Tool & Die shop",
-    siteUrl:"https://www.egartool.com/",
-    image: egar,
-    tags: ["Web Design", "Wordpress", "PHP"]
+    title: "Waffle Bar",
+    description: "A simple practice website built using React and Bootstrap, designed to be responsive for various screen sizes.",
+    image: waffleBar,
+    codeUrl: "https://github.com/andy-iio/the-waffle-bar",
+    siteUrl: "https://andy-iio.github.io/the-waffle-bar/",
+    tags: ["React", "Bootstrap"]
   },
+
 ];
 
 const Projects = ({ handleButtonClick }) => (
