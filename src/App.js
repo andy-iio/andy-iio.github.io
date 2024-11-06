@@ -85,6 +85,7 @@ function App() {
 
         <section id="contact">
           <Contact />
+          
         </section>
 
         <footer className="py-3 text-center">
