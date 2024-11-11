@@ -11,6 +11,7 @@ import colloseum from '../media/ColloseumKing.png';
 import Ewaste from '../media/eWaste1.png';
 import egar from '../media/egar.png';
 import gtz from '../media/gtz.png';
+import postpier from '../media/postpier.png';
 import noPhoto from '../media/photos-coming-soon.jpg';
 // import skiResort from '../media/ski-resort.png';
 // import flavourfulPlate from './media/flavourful-plate.png';
@@ -79,6 +80,14 @@ const projectData = [
   },
   {
     id: 8,
+    title: "Post Pier Manufacturing",
+    description: "Website homepage created for a concrete permacolumn business.",
+    image: postpier,
+    siteUrl: "https://postpiermanufacturing-preview.digitalrealm.ca/",
+    tags: ["Web Design", "Wordpress", "PHP"]
+  },
+  {
+    id: 9,
     title: "Waffle Bar",
     description: "A simple practice website built using React and Bootstrap, designed to be responsive for various screen sizes.",
     image: waffleBar,

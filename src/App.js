@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import VideoEmbed from './components/VideoEmbed';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -85,7 +84,7 @@ function App() {
 
         <section id="contact">
           <Contact />
-          
+
         </section>
 
         <footer className="py-3 text-center">
