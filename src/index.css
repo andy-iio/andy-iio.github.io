@@ -7,7 +7,7 @@
   --colour-1: #B3D2B2;
   --colour-2: #BDE4A7;
   --colour-3: #FFFD98;
-  --colour-3-seethrough:#fffd98cf;
+  --colour-3-seethrough: #fffd98cf;
   --colour-4: #9FBBCC;
   --colour-5: #7A9CC6;
   --max-width: 1400px;
@@ -61,7 +61,7 @@ code {
 .tag {
   color: #000000;
   background-color: var(--colour-3);
-  border:2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .btn-hover {
@@ -105,6 +105,18 @@ code {
   animation: textAnimate 9s infinite alternate;
 }
 
+@keyframes highlight {
+  0% {
+    background-position: 100%;
+    color: white;
+  }
+
+  100% {
+    background-position: 0;
+    color: black;
+  }
+}
+
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;
@@ -129,13 +141,13 @@ code {
   /* top: 50%; */
   /* left: 50%; */
   /* transform: translate(-50%, -50%);   */
-  width: 400px !important; 
+  width: 400px !important;
   height: 350px !important;
   margin: 80px;
   border-radius: 30px;
   background-color: var(--colour-5);
   z-index: 1;
-  border:4px solid var(--colour-3);
+  border: 4px solid var(--colour-3);
 }
 
 .about-overlay {
@@ -167,8 +179,11 @@ code {
 .image {
   max-height: 375px;
   max-width: 400px;
+  width: auto;
+  height: auto;
   z-index: 2;
 }
+
 
 /* scrolling tags on header */
 .bgContainer {
@@ -240,6 +255,10 @@ code {
   background-repeat: repeat;
   background-size: auto;
 }
+#about p {
+  font-size: 18px;
+	line-height: 1.45;
+}
 
 
 #projects h5 {
@@ -272,6 +291,19 @@ code {
   z-index: 4 !important;
 }
 
+/* this mark code highlight is from jlengstorf on codepen! */
+mark {
+  animation: highlight linear forwards;
+  animation-timeline: view(60% 20%);
+  background: linear-gradient(to right,
+      oklch(97.42% 0.12326000984238611 107.49524977602458/ 1) 50%,
+      oklch(97.42% 0.12326000984238611 107.49524977602458 / 0) 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  border-radius: 0.125rem;
+  padding-inline: 0.125rem;
+  color: white;
+}
 
 /* Larger Screens */
 @media (min-width: 2180px) {
@@ -302,7 +334,6 @@ code {
 }
 
 /* VIDEO PLAYER */
-/* Add these styles to your existing CSS file or create a new one and import it */
 
 .video-modal {
   position: fixed;

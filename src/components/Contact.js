@@ -9,8 +9,9 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('secret', 'secret', form.current, 'APIKEY_hidden_for_github_check_keep')
-      .then((result) => {
+    // emailjs.sendForm('secret', 'secret', form.current, 'APIKEY_hidden_for_github_check_keep')
+    emailjs.sendForm('service_4vzj3hj', 'template_xxinp0k', form.current, 'ZmsAjgrP1atwnCSIP')  
+    .then((result) => {
         console.log(result.text);
         console.log("message sent");
         setSubmitted(true);

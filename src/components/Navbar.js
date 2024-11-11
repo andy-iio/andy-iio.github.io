@@ -34,7 +34,7 @@ const Navbar = ({ isNavbarOpen, handleNavbarToggle, handleLinkClick }) => {
               </a>
             </li>
             <li className="nav-item mx-2">
-              <a className="nav-link" href="https://drive.google.com/file/d/17P7rw-V5hTb1fmsePySSkIYZDftxGhRQ/view?usp=sharing" onClick={handleLinkClick}>
+              <a className="nav-link" href="https://drive.google.com/file/d/1pT9VOJmdr9p-ygg6MdxicM4HX_WNQhET/view?usp=sharing" onClick={handleLinkClick}>
                 Resume
               </a>
             </li>

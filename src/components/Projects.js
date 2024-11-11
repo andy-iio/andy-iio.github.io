@@ -10,6 +10,7 @@ import sudoku from '../media/sudoku.png';
 import colloseum from '../media/ColloseumKing.png';
 import Ewaste from '../media/eWaste1.png';
 import egar from '../media/egar.png';
+import gtz from '../media/gtz.png';
 import noPhoto from '../media/photos-coming-soon.jpg';
 // import skiResort from '../media/ski-resort.png';
 // import flavourfulPlate from './media/flavourful-plate.png';
@@ -70,6 +71,14 @@ const projectData = [
   },
   {
     id: 7,
+    title: "Go Trenchless Zone",
+    description: "Website created for a local trenchless solutions business. Includes dynamic product catalouge pages.",
+    image: gtz,
+    siteUrl: "https://gotrenchlesszone.com/",
+    tags: ["Web Design", "Wordpress", "PHP"]
+  },
+  {
+    id: 8,
     title: "Waffle Bar",
     description: "A simple practice website built using React and Bootstrap, designed to be responsive for various screen sizes.",
     image: waffleBar,

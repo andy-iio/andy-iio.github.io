@@ -10,12 +10,13 @@ const About = () => (
             Hi! I'm Andy, a 2nd year computer science student who loves creating projects and learning new programming tools and languages.
           </p>
           <p className="section-description">
-            I am currently learning Flutter and Dart, and have solid foundation in multiple programming languages and frameworks including C, C++, Python, and VBA. I also have practice with web development technogies like Bootstrap, Flask, React, as well as HTML, CSS, and JavaScript.
+            I am currently learning <mark>Flutter and Dart,</mark> and have solid foundation in multiple programming languages and frameworks including <mark>C, C++, Python, and VBA.</mark> </p>
+            <p>I also have practice with web development technogies like <mark>Bootstrap, Flask, and React,</mark> as well as <mark>HTML, CSS, and JavaScript.</mark>
           </p>
           <p className="section-description">
             Thanks for taking the time to visit my portfolio website! Check out some of my projects below!
           </p>
-          <p>I created this site myself, with React! See the code for it over on my {}
+          <p>I created this site myself, with <mark>React!</mark> See the code for it over on my {}
             <a 
             href="https://github.com/andy-iio/andy-iio.github.io" 
             target="_blank" 
